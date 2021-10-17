@@ -1,16 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import useFirebase from '../../hooks/useFirebase';
 
 const Header = () => {
+  const {user} = useFirebase();
     return (
         <div>
-             <nav>
-                 <NavLink to="/home">Home</NavLink>
-                 <NavLink to="/login">Login</NavLink>
+             
+                 <Link to="/home">Home</Link>
+               <Link to="/login">Login</Link>  
                   
                   
-                 <NavLink to="/aboutbgh">About Bgh</NavLink>
-             </nav>
+                 <Link to="/aboutbgh">About Bgh</Link>
+            
         </div>
     );
 };

@@ -12,28 +12,32 @@ function App() {
   return (
     <div className="App">
         <BrowserRouter>
-          <Header></Header>
+          <Header></Header>  
             <Switch>
-              <Route exact to="/">
+            <Route exact to="/">
                 <Home></Home>
-              </Route>
-              <Route to="/home">
+              </Route> 
+             
+              <Route  to="/home">
                 <Home></Home>
-              </Route>
-
-              <Route to="/login">
-                  <Login></Login>
-              </Route>
+              </Route> 
               <Route to="/aboutbgh">
                    <AboutBgh></AboutBgh>
-              </Route>
+              </Route>  
+               
+
+               <Route  to="/login">
+                  <Login></Login>
+              </Route>  
+              
+              
               <Route to="*">
                    <NotFound></NotFound>
               </Route>
 
             </Switch>
 
-            <Footer></Footer>
+             <Footer></Footer>  
         </BrowserRouter>
     </div>
   );
