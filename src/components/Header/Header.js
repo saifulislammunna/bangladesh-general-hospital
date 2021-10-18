@@ -27,7 +27,7 @@ const Header = () => {
                    user.email ? <Button   onClick={logOut} className="log-out"  >Log out</Button>
                     :
                    <NavLink className="log-in" to ="/login">Log in</NavLink>}
-                   <NavLink className="about-bgh p-5" to="/aboutbgh">Aboutbgh</NavLink>
+                   <NavLink className="log-in p-5" to="/aboutbgh">Aboutbgh</NavLink>
                    <NavLink className="home" to="/latestnews">Latest News</NavLink>
                  </nav>
              

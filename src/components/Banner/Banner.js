@@ -31,7 +31,7 @@ const Banner = () => {
                          Your treatment.</h1>
                          <h3 className="text-animation fs-1 banner-text"> <span  ref={textRef}></span></h3>
 
-                         <Button className="btn-primary">Discover More</Button>
+                         <Button className="btn">Discover More</Button>
                      </div>
                 </div>
                 <div className="right-container half-width ">
