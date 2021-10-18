@@ -2,17 +2,22 @@
 import { BrowserRouter,Switch,Route } from 'react-router-dom';
 import './App.css';
 import AboutBgh from './components/AboutBgh/AboutBgh';
+import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 function App() {
   return (
     <div className="App">
         <BrowserRouter>
-          <Header></Header>  
+          <Header></Header> 
+          <Banner></Banner> 
             <Switch>
             <Route exact path="/">
                 <Home></Home>
