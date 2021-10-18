@@ -9,6 +9,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import LatesNews from './components/LatestNews/LatesNews';
 
 
 
@@ -26,14 +27,20 @@ function App() {
               <Route  path="/home">
                 <Home></Home>
               </Route> 
-              <Route path="/aboutbgh">
-                   <AboutBgh></AboutBgh>
-              </Route>  
-               
+              
 
                <Route  path="/login">
                   <Login></Login>
               </Route>  
+
+              <Route path="/aboutbgh">
+                   <AboutBgh></AboutBgh>
+              </Route>  
+               
+               <Route path="/latestnews">
+                   <LatesNews></LatesNews>
+
+               </Route>
               
               
               <Route path="*">

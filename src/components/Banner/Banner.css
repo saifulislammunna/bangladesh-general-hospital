@@ -10,6 +10,9 @@
     
     align-items: center;
 }
+.banner-text{
+    color: black;
+}
  .img-container{
     width: 80%;
     height: 500px;
