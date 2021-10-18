@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {  NavLink } from 'react-router-dom';
 import useFirebase from '../../hooks/useFirebase';
 
 const Header = () => {
@@ -7,12 +7,11 @@ const Header = () => {
     return (
         <div>
              
-                 <Link to="/home">Home</Link>
-               <Link to="/login">Login</Link>  
-                  
-                  
-                 <Link to="/aboutbgh">About Bgh</Link>
-            
+                 <nav>
+                   <NavLink to="/home">Home</NavLink>
+                   <NavLink to="login">Login</NavLink>
+                   <NavLink to="/aboutbgh">Aboutbgh</NavLink>
+                 </nav>
         </div>
     );
 };
