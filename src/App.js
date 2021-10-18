@@ -10,6 +10,7 @@ import Login from './components/Login/Login';
 import NotFound from './components/NotFound/NotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LatesNews from './components/LatestNews/LatesNews';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 
 
 
@@ -41,7 +42,9 @@ function App() {
                    <LatesNews></LatesNews>
 
                </Route>
-              
+              <Route path="/service/:id">
+                 <ServiceDetail></ServiceDetail>
+              </Route>
               
               <Route path="*">
                    <NotFound></NotFound>

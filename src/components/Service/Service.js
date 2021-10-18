@@ -1,9 +1,11 @@
 import React from 'react';
 import {Button,CardGroup,Card} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Service.css'
 /* service component */
 const Service = (props) => {
-    const {img,name,price} = props.service
+    const {img,name,description,id} = props.service;
+    const url = `/service/${id}`;
     return (
        
         <div>
@@ -13,10 +15,12 @@ const Service = (props) => {
   <Card  className=" ">
     <Card.Img variant="top" src={img} className="  p-5"  width="450" height="350" />
     <Card.Body>
-      <Card.Title>Course Name : {name}</Card.Title>
+      <Card.Title>  Name : {name}</Card.Title>
        
-      <h4> {price}</h4>
-      <Button>Enroll Now</Button> 
+      <h4> {description}</h4>
+      <div>
+      <Link to={url} ><Button> Detail</Button> </Link>
+      </div>
     </Card.Body>
       
     
