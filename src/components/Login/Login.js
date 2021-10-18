@@ -1,9 +1,10 @@
 import React from 'react';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
+ 
  import './Login.css';
 
 const Login = () => {
- const {user, singnInUsingGoogle} = useFirebase();
+ const { singnInUsingGoogle} =  useAuth();
 
     return (
         <div className="login-form">
@@ -11,7 +12,9 @@ const Login = () => {
                 <h2>Login</h2>
                 <form onSubmit="">
                     <input type="email" name="" id="" placeholder="Your Email" />
+                    <br />
                     <input type="password" name="" id="" placeholder="your password"/>
+                    <br />
                     <input type="submit" value="Submit" />
 
                 </form>

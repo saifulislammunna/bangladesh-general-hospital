@@ -1,12 +1,14 @@
 import React from 'react';
+import { Button  } from 'react-bootstrap';
 import {  Link, NavLink } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
+ 
 import logo from '../../images/logo.png';
 import './Header.css';
 
 
 const Header = () => {
-  const {user,logOut} = useFirebase();
+   const {user, logOut } = useAuth();
     return (
       <div className="topbar">
           <div className="wrapper">
@@ -19,13 +21,14 @@ const Header = () => {
                  
            
                  <nav>
-                   <NavLink to="/home">Home</NavLink>
+                   <NavLink className="home" to="/home">Home</NavLink>
+                   <span style={{color:'black'}}>{user.displayName}</span>
                    {
-                   user.email ? <button onClick={logOut} className="cart w-25">Log out</button>
+                   user.email ? <Button   onClick={logOut} className="log-out"  >Log out</Button>
                     :
                    <NavLink className="log-in" to ="/login">Log in</NavLink>}
-                   <NavLink to="/aboutbgh">Aboutbgh</NavLink>
-                   <NavLink to="/latestnews">Latest News</NavLink>
+                   <NavLink className="about-bgh p-5" to="/aboutbgh">Aboutbgh</NavLink>
+                   <NavLink className="home" to="/latestnews">Latest News</NavLink>
                  </nav>
              
                     

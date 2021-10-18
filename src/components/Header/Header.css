@@ -33,6 +33,13 @@
     align-items: center;
     margin-left: 30px;
 }
+.home{
+    color: black;
+    text-decoration: none;
+}
+.home:hover{
+    color: black;
+}
 .log-in{
     margin-right: 20px;
     text-decoration: none;
@@ -42,10 +49,15 @@
 .log-in:hover{
     color: black;
 }
-.sign-up{
-    margin-right: 20px;
+/* .log-out{
+    padding : 50px;
+     
+} */
+.about-bgh{
+    color: black;
     text-decoration: none;
 }
-.add-item{
-     color: red;
+.about-bgh:hover{
+    color: black;
 }
+ 

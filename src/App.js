@@ -11,13 +11,15 @@ import NotFound from './components/NotFound/NotFound';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import LatesNews from './components/LatestNews/LatesNews';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
+import AuthProvider from './context/AuthProvider';
 
 
 
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
+       <AuthProvider>
+       <BrowserRouter>
           <Header></Header> 
           <Banner></Banner> 
             <Switch>
@@ -54,6 +56,7 @@ function App() {
 
              <Footer></Footer>  
         </BrowserRouter>
+       </AuthProvider>
     </div>
   );
 }
