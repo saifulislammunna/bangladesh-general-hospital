@@ -22,7 +22,7 @@ const Header = () => {
            
                  <nav>
                    <NavLink className="home" to="/home">Home</NavLink>
-                   <span style={{color:'black'}}>{user.displayName}</span>
+                   <span style={{color:'black'}}>{user.displayName} </span>
                    {
                    user.email ? <Button   onClick={logOut} className="log-out"  >Log out</Button>
                     :

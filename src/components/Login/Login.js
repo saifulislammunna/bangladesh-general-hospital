@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
-import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, sendEmailVerification,sendPasswordResetEmail } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, sendEmailVerification,sendPasswordResetEmail,updateProfile } from "firebase/auth";
  
 
  import './Login.css';
@@ -21,10 +21,12 @@ const Login = ( ) => {
      })
 
  }
+ const [name, setName] = useState('');
  const [email,setEmail] = useState('');
  const [password, setPassword] =useState('');
  const [error, setError] = useState('');
  const [isLogin, setIsLogin] = useState(false);
+
 
 const toggleLogin = e => {
   setIsLogin(e.target.checked)
@@ -33,6 +35,10 @@ const toggleLogin = e => {
  const handleEmailChange = e => {
    setEmail(e.target.value);
  }
+const handleNameChange = e => {
+  setName(e.target.value);
+}
+
  const halePassWordChange = e => {
   setPassword(e.target.value);
  }
@@ -74,6 +80,7 @@ const regiterNewUser = (email, password) => {
     console.log(user);
     setError('');
     verifyEmail();
+    setUserName();
   })
   .catch(error => {
     setError(error.message);
@@ -83,6 +90,13 @@ const verifyEmail = () =>{
   sendEmailVerification(auth.currentUser)
   .then( result => {
     console.log(result);
+  })
+}
+
+const setUserName = () => {
+  updateProfile(auth.currentUser, {displayName: name})
+  .then(result => {
+
   })
 }
 
@@ -99,7 +113,15 @@ const handleResetPassword = () => {
             <div >   
             <h2>Please {isLogin ? 'Login' :'Register'}</h2>
                <div className=" " /* className="login-form" */>
+               
                <form onSubmit={handleRegistration}>
+               {!isLogin  &&  <div className="row mb-3">
+    <label htmlFor="inputName" className="col-sm-2 col-form-label">Name</label>
+    <div className="col-sm-10">
+    <input type="text" onBlur={handleNameChange} className="form-control" id="inputName"  placeholder="Your Name"/>
+    </div>
+  </div>}
+                
   <div className="row mb-3">
     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
     <div className="col-sm-10">
@@ -127,7 +149,7 @@ const handleResetPassword = () => {
     {error}
   </div>
   <button type="submit" className="btn  btn-primary">{isLogin ? 'Log in' :'Register'}</button>
-  <button onClick={handleResetPassword} type="button" class="btn btn-secondary  "> Reset Password</button>
+  <button onClick={handleResetPassword} type="button" className="btn btn-secondary  "> Reset Password</button>
 
 </form>
                   
