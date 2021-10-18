@@ -12,6 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import LatesNews from './components/LatestNews/LatesNews';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import AuthProvider from './context/AuthProvider';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
 
@@ -44,9 +45,9 @@ function App() {
                    <LatesNews></LatesNews>
 
                </Route>
-              <Route path="/service/:id">
+              <PrivateRoute path="/service/:id">
                  <ServiceDetail></ServiceDetail>
-              </Route>
+              </PrivateRoute>
               
               <Route path="*">
                    <NotFound></NotFound>

@@ -1,6 +1,8 @@
 import React from 'react';
 import {Button,CardGroup,Card} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInfo } from '@fortawesome/free-solid-svg-icons';
 import './Service.css'
 /* service component */
 const Service = (props) => {
@@ -19,7 +21,7 @@ const Service = (props) => {
        
       <h4> {description}</h4>
       <div>
-      <Link to={url} ><Button> Detail</Button> </Link>
+      <Link to={url} ><Button> <FontAwesomeIcon icon={faInfo } /> Detail</Button> </Link>
       </div>
     </Card.Body>
       

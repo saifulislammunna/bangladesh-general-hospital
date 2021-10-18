@@ -24,7 +24,21 @@ const AboutBgh = () => {
                 <div className="text-start p-5 pb-2">
                     <h1>Patient-directed Research</h1>
                     <h6>BGH seeks to bring its patients new and better care and therapies through research. </h6>
+                    <p>Clinical research is an integral part of SGH’s institutional practice and is actively carried out by clinicians and scientists from medical, nursing and allied health departments. The hospital leverages on its multi-disciplinary capabilities, depth of specialization, a large patient base and its research affiliations with renowned centres locally and globally. </p>
 
+                    <p>Collaborating with academic partner Duke-NUS Graduate Medical School, which is located on SGH Campus, the hospital’s goal is to develop the Campus into a hub for translational and clinical research.</p>
+
+                </div>
+                <div className="text-start p-5 pb-2">
+                      <h1>Key Figures</h1>
+                      <ul>
+                          <li>Bed Distribution	- 1,785</li>
+                          <li>Staff Strength - 9,888</li>
+                          <li>Patients Discharged - 80,817</li>
+                          <li>Specialist Outpatient Attendances - 724,480</li>
+                          <li>A&E Attendances - 128,660</li>
+                          <li>Inpatient & Electives Surgical Operations - 92,228</li>
+                      </ul>
                 </div>
            </div>
         </div>
