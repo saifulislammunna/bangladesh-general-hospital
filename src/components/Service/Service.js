@@ -11,15 +11,15 @@ const Service = (props) => {
     return (
        
         <div>
-            <div>
+            <div className="single-service">
               {/* card group added */}
             <CardGroup >
   <Card  className=" ">
     <Card.Img variant="top" src={img} className="  p-5"  width="450" height="350" />
     <Card.Body>
-      <Card.Title>  Name : {name}</Card.Title>
+      <Card.Title className="fs-2">   {name}</Card.Title>
        
-      <h4> {description}</h4>
+      < p className="text-start"> {description}</p>
       <div>
       <Link to={url} ><Button> <FontAwesomeIcon icon={faInfo } /> Detail</Button> </Link>
       </div>
