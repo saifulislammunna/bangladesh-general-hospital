@@ -9,13 +9,13 @@ const Header = () => {
   const {user,logOut} = useFirebase();
     return (
       <div className="topbar">
-      <div className="wrapper">
-        <div className="left">
-           <Link to="/home"><img className="logo" src={logo} alt="" /></Link>
-         </div>
-         <div className="right">
+          <div className="wrapper">
+               <div className="left">
+                  <Link to="/home"><img className="logo" src={logo} alt="" /></Link>
+               </div>
+              <div className="right">
              
-             <div className="item-container">
+                <div className="item-container">
                  
            
                  <nav>
@@ -30,8 +30,8 @@ const Header = () => {
                     
                     
                      
+                </div>
              </div>
-           </div>
         </div>
      </div>
              
