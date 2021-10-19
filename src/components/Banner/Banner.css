@@ -7,7 +7,7 @@
 }  
 .left-container{
     display: flex;
-    
+    justify-content: center;
     align-items: center;
 }
 .banner-text{
@@ -60,6 +60,7 @@
         
          
     }
+    
     .img-container img{
         width:  0;
         
