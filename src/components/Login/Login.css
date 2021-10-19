@@ -5,6 +5,17 @@
      !important; 
      height: 30px
      !important;
-     ;
+     
 }
- 
+/* responsive added */
+@media only screen  and (max-width:688px){
+     .form-control{
+        
+          width: 250px
+             !important; 
+            height: 30px
+             !important;
+                
+     
+     }
+}
