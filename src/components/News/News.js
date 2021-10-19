@@ -6,7 +6,8 @@ const News = (props) => {
     const { info,url ,title } = props.newsas   ;
     return (
         <div>
-              <div className="single-service">
+          
+              <div  className="single-service">
               {/* card group added */}
             <CardGroup>
   <Card  className=" ">

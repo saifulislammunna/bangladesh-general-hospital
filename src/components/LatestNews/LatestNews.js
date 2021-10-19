@@ -13,9 +13,12 @@ const LatestNews = () => {
         setNews(data));
     },[])
     return (
-        <div className="service-container p-5">
+        <div >
+             
+            <h1 className="text-strat">latest News:</h1>
             
-            {
+               <div className="service-container p-5">
+               {
                 news.map( newsas =>  <News
                   newsas = {newsas}
                   key ={newsas.name}
@@ -27,6 +30,7 @@ const LatestNews = () => {
                      
                  )
             }
+               </div>
         </div>
     );
 };
