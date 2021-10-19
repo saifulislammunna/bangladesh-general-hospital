@@ -37,11 +37,12 @@
   .btn{
      
         text-decoration: none;
-        background-image: linear-gradient(hsla(345, 96%, 48%, 0.918), rgba(172, 0, 43, 0.918));
-        padding: 10px 40px;
+        background-image: linear-gradient(hsla(345, 96%, 48%, 0.918), rgba(172, 0, 43, 0.918))
+        !important;
+        padding: 10px 40px  ;
         color: white;
-        font-weight: 700;
-        border-radius: 35px;
+        font-weight: 700  ;
+        border-radius: 35px ;
          
    
   }

@@ -1,7 +1,10 @@
  
-/*  
+ 
 .form-control {
-     width: 160px; 
-     height: 30px;
-} */
+     width: 650px
+     !important; 
+     height: 30px
+     !important;
+     ;
+}
  
