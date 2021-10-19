@@ -9,16 +9,19 @@ import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, sen
 
 const Login = ( ) => {
   const auth = getAuth();
- const { singnInUsingGoogle} =  useAuth();
+  
+ const { singnInUsingGoogle} = useAuth(); 
  const location = useLocation();
  const history = useHistory();
  const redirect_uri = location.state?.form || `/home`;
 /*  console.log('came from',location.state?.form); */
  const handleGoogleLogin = () => {
+    
      singnInUsingGoogle()
      .then(result => {
             history.push(redirect_uri);
      })
+    
 
  }
  const [name, setName] = useState('');

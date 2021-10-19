@@ -28,7 +28,10 @@ const Header = () => {
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
     <Nav.Link className="home text-white"  as={Link}  to="/home">Home</Nav.Link>
-      <Nav.Link className="home text-white"  as={Link}  to="/login">Log in</Nav.Link>
+      {
+        user.email ? <Button   onClick={logOut} className="log-out"  >Log out</Button>
+        :
+        <Nav.Link className="home text-white"  as={Link}  to="/login">Log in</Nav.Link>}
       <Nav.Link  className="home text-white" as={Link}  to="/aboutbgh">Aboutbgh</Nav.Link>
       <Nav.Link  className="home text-white" as={Link}  to="/latestnews">Latest News</Nav.Link>
       <Navbar.Text className=" text-white">
