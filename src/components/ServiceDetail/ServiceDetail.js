@@ -24,7 +24,7 @@ const ServiceDetail = () => {
     },[])
     return (
         <div className="service-detail">
-           <div className="breakfast-img p-3">
+           <div className="service-img p-3">
             <img src={service.img}  alt="" />
             </div>
            
