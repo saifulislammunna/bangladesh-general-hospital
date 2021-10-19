@@ -1,8 +1,10 @@
  
 import React, { useEffect, useState } from 'react';
-import { Button , Card, CardGroup } from 'react-bootstrap';
+import { Button  } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
+import './ServiceDetail.css';
+
 
 const ServiceDetail = () => {
     const { id} = useParams();
@@ -21,25 +23,33 @@ const ServiceDetail = () => {
         });
     },[])
     return (
-        <div>
-                 {/* card group added */}
-                 <CardGroup>
-  <Card  className=" ">
-    <Card.Img variant="top" src={service.img} className="  p-5"  width="450" height="350" />
-    <Card.Body>
-      <Card.Title>  Name : {service.name}</Card.Title>
-       
-      <h4> {service.description}</h4>
-      <div>
-      <Link to="/home"  ><Button> Detail</Button> </Link>
-      </div>
-    </Card.Body>
-    </Card>
-  </CardGroup>
+        <div className="service-detail">
+           <div className="breakfast-img p-3">
+            <img src={service.img}  alt="" />
+            </div>
+           
+           <div className="d-flex p-3 selected-item align-items-center justify-content-center">
+                      <div className=" selected-item  d-flex  align-items-center      justify-content-center p-5">
+         
+             
+                       <h1 className="pb-2 ">{ service.name} </h1>
+                           <p className="p-2 ">{service.description}</p>
+             
+                       </div >
+            
+                       <Link to="/home"  ><Button  className="btn  rounded-pill btn">
+                  
+                 <span className="p-2 "> Detail</span></Button></Link>
+           </div>
+            
+           
+         </div>
      
-        </div>
+        
     );
 };
 
 export default ServiceDetail;
  
+
+     
