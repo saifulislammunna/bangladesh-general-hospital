@@ -3,19 +3,6 @@
   .selected-item {
     flex-direction: column;
 }
-.btn{ 
-       
-       width: 150px;
-       height: 50px;
-       border: 1px solid gray;
-        
-
-}
-.decrease-btn  {
-   width: 100px;
-   
-}
-.form-control{
-   width: 60px;
-   height: 30px;
-}
+ 
+ 
+ 
