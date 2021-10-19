@@ -67,4 +67,12 @@
 .about-bgh:hover{
     color: black;
 }
- 
+/* @media only screen  and (max-width:688px){
+    .left{
+        width: 0;
+    }
+    .right{
+        width: 100%;
+    }
+}
+  */

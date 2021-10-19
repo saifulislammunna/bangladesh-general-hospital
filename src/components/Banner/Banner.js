@@ -36,7 +36,7 @@ const Banner = () => {
                 </div>
                 <div className="right-container half-width ">
                      <div className="img-container ">
-                         <img src= {img} alt="" />
+                         <img /* className="d-block" */ src= {img} alt="" />
                      </div>
                 </div>
             </div>
