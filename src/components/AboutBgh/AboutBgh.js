@@ -1,5 +1,8 @@
 import React from 'react';
 import './AboutBgh.css';
+
+
+/* aboutbgh component */
 const AboutBgh = () => {
     return (
         <div>
