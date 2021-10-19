@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfo } from '@fortawesome/free-solid-svg-icons';
 import './Service.css'
+
+
 /* service component */
 const Service = (props) => {
     const {img,name,description,id} = props.service;

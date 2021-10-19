@@ -3,7 +3,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
-   /*  flex-direction: row; */
+    
 }  
 .left-container{
     display: flex;
@@ -45,6 +45,8 @@
          
    
   }
+
+  /* responsive added */
   @media only screen  and (max-width:688px){
     .background-image{
         display: flex;
@@ -57,13 +59,6 @@
         
          
     }
-    
-   
-   
- 
-    
-
-
     .img-container img{
         width:  o;
         

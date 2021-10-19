@@ -7,6 +7,8 @@ import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword, sen
 
  import './Login.css';
 
+ /* login component */
+
 const Login = ( ) => {
   const auth = getAuth();
   

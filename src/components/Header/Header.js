@@ -7,7 +7,7 @@ import logo from '../../images/logo.png';
  
 import './Header.css';
 
-
+/* Header component */
 const Header = () => {
    const {user, logOut } = useAuth();
     

@@ -4,6 +4,9 @@ import img from '../../images/doctor-with-co-workers-analyzing-x-ray-removebg-pr
 import { init } from 'ityped';
 import { Button } from 'react-bootstrap';
 
+
+
+/* Banner component */
 const Banner = () => {
 
     const textRef = useRef();

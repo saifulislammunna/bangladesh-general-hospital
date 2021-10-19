@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import News from '../News/News';
  
-
+/* latest news component */
 const LatestNews = () => {
     const [ news, setNews] = useState([]);
      
