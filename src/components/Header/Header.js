@@ -27,7 +27,7 @@ const Header = () => {
       <Nav.Link  className="home text-white" as={Link}  to="/aboutbgh">About BGH</Nav.Link>
       <Nav.Link  className="home text-white" as={Link}  to="/latestnews">Latest News</Nav.Link>
       <Navbar.Text className=" text-white">
-        Signed in as:  {user.displayName}  
+         {user.displayName}  
       </Navbar.Text>
     </Navbar.Collapse>
      
