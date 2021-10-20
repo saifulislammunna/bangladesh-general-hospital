@@ -7,6 +7,14 @@
      !important;
      
 }
+.text-color{
+    color: #090979;
+}
+.toggle-btn{
+     padding-left: 200px;
+     padding-top: 5px;
+}
+ 
 /* responsive  added for log in form */
 @media only screen  and (max-width:688px){
      .form-control{
@@ -15,6 +23,14 @@
              !important; 
             height: 30px
              !important;
+                
+     
+     }
+}
+@media only screen  and (max-width:688px){
+     .toggle-btn{
+        
+          padding-left: 20px;
                 
      
      }
